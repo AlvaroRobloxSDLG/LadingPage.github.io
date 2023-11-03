@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.header{
+    background:#ffffff;
+    color: white;
+    padding: 0.6rem 0;
+
+    left: 0;
+    top:0;
+    right: 0;
+  }
+  .container{
+    width:85%;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-left: 590px;
+    padding: 0 60px;
+  }
+  .header a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 19px;
+  font-family: DM SANS;
+}
+  .logo-nav-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+  .logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+  .logo{
+    letter-spacing: 15px;
+    font-size: 1.3em;
+    margin-left: -560px;
+  }
+  .logo img{
+    max-width: 36%; 
+    height: auto; 
+    
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+
+.navigation ul li:first-child {
+    margin-left: 10px;
+}
+
+   .navigation ul li a{
+  display: block;
+  padding:0.5rem 1 rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  font-family: DM SANS;
+   }
+   .navigation ul li a:hover{
+     background:#C67C4E;
+  
+   }
+   .button-container {
+    margin-left: auto; 
+}
+.button-container a {
+  margin-left: auto; 
+  color: aliceblue;
+  font-family: DM SANS;
+}
+
+.button {
+    background: #313131;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+ 
+}
+
+.button:hover {
+    background: #333;
+}
+.boton-descarga {
+background-color: black;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 50px;
+margin: 10px;
+margin-left: 120px;
+margin-right: 30px;
+}   
+
+.titulo{
+    color: black;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 117px;
+    font-family: DM SANS;
+}
+.rectangulo-negro {
+    width: 1730px;
+    height: 20px; 
+    background-color: black; 
+    float: left;
+    
+  
+  }
+.subtitulo{
+
+    color: black;
+    text-align: left;
+    font-size: 26px;
+    margin-top: 70px;
+    margin-left: 120px;
+    font-weight: bold;
+    font-family: DM SANS;
+}
+
+.cuerpo{
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 120px;
+    font-family: DM SANS;
+}
+
+.piedepagina{
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 140px;
+}
+
+.telficono{
+  margin-top: -70px;
+  margin-left: 110px;
+}
+
+.correoicono{
+  margin-top: 12px;
+  margin-left: 110px;
+}
+
+
+
+.imagen{
+margin-left: 900px;
+margin-top: -400px;
+}
+
+.pie-de-pagina {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 1670px;
+  
+}
+  .pieimagenes {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    margin-left: -710px;
+
+  }
+  
+  .pieimagenes img {
+    max-width: 20%; 
+    height: auto; 
+    margin-bottom: 10px;
+  }
+  
+  .pietexto {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-right: -70px;
+
+  
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  
+
+  }
+
+ form {
+            background-color: #C67C4E;
+            position: absolute; /* Posición absoluta */
+            top: 200px; /* Desde la parte superior */
+            left: 1000px; /* Desde la izquierda */
+            border: 1px solid #ccc; /* Borde para visualización */
+            padding: 20px; /* Espaciado interno */
+            font-family: DM SANS;
+          }
+
+        /* Estilo para el campo de entrada y etiquetas */
+        .form-control {
+            margin: 10px 30px;
+            flex: 1;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        label {
+            display: block;
+            font-family: DM SANS;
+          }
+
+        input[type="name"],
+        input[type="email"],
+        input[type="telef"],
+        input[type="compan"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            font-family: DM SANS;
+          }
+
+        .submit-btn {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-left: 190px;
+            font-family: DM SANS;
+          }
