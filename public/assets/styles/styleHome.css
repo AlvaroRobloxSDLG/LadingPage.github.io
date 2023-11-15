@@ -101,6 +101,7 @@
 .seccion-imagen-fondo {
   text-align: center;
   color: white;
+
   background-attachment: fixed;
   padding: 225px 0;
 }
@@ -180,9 +181,11 @@ body {
 }
 .imagen-mision {
   float: right;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: -310px;
+  width: 400px;
+  height: 400px;
 }       
 
 
@@ -216,6 +219,8 @@ body {
   float: left;
   margin-left: 80px;
   margin-top: -300px;
+  width: 400px;
+  height: 400px;
 } 
 
 .seccionCara {
