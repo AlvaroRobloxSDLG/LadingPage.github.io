@@ -49,37 +49,34 @@
 <br />
 
 <div class="parrafo-mision">
-<label for="seleccionar">Selecciona una opción:</label>
+    <label for="seleccionar">Selecciona una opción:</label>
 
-<select id="seleccionar" onchange="mostrarVideo()">
-    <option value="" disabled selected>Selecciona una opción</option>
-    <option value="AboutProduct.mp4">Video About the product</option>
-    <option value="AboutTeam.mp4">Video About the team</option>
-    <option value="AboutUs.mp4">Video About Us</option>
-</select>
+    <select id="seleccionar" onchange="mostrarVideo()">
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="https://www.youtube.com/embed/cx8tXooXnzk">Video About the Product</option>
+        <!-- Reemplaza "TU_ID_DE_VIDEO" con la ID real del video de YouTube -->
+        <option value="https://www.youtube.com/embed/cx8tXooXnzk">Video About the Team
+        <option value="https://www.youtube.com/embed/Otra_ID_DE_VIDEO">Video About Us</option>
+        </option>
+    </select>
+    
+    
 </div>
 <br />
 <br />
 <br />
 
 <div id="videoContainer">
-    <video id="video" controls>
-    <source id="videoSource" src="" type="video/mp4">
-    Tu navegador no soporta el elemento de video.
-</video>
+    <iframe id="video" allowfullscreen frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </div>
+
 <script>
     function mostrarVideo() {
         var seleccion = document.getElementById("seleccionar").value;
-        var videoSource = document.getElementById("videoSource");
         var video = document.getElementById("video");
 
         if (seleccion !== "") {
-            videoSource.src = seleccion;
-            video.load();
-            video.play();
-        } else {
-            video.pause();
+            video.src = seleccion;
         }
     }
 </script>
