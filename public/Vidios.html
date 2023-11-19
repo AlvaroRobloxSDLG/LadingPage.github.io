@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingHome</title>
+    <link rel="stylesheet" href="styleVidios.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+
+<body>
+    <header class = "header">
+        <div class = "container logo-nav-container">
+            <a href="logooficial.png" class="logo"> <img src="logooficial.png" alt="logo"> </a>
+            <nav class="navigation">
+                <ul>
+
+                    <li><a href="index.html">Inicio </a> </li>
+                    <li><a href="AcercaDe.html">Acerca de</a> </li>
+                    <li><a href="Problema.html">Problemática</a> </li>
+                    <li><a href="Contectaos.html">Contáctanos</a> </li>
+                    <li><a href="Vidios.html">Videos</a> </li>
+                    
+                    <div class="button-container">
+                    <li><a href="Descarga.html" class="button">Descargar</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+</header>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="parrafo-mision">
+<label for="seleccionar">Selecciona una opción:</label>
+
+<select id="seleccionar" onchange="mostrarVideo()">
+    <option value="" disabled selected>Selecciona una opción</option>
+    <option value="ssstwitter.com_1700082371478.mp4">Video About the product</option>
+    <option value="ssstwitter.com_1700082355200.mp4">Video Meet the team</option>
+    <option value="video3.mp4">Video Expo</option>
+</select>
+</div>
+<br />
+<br />
+<br />
+
+<div id="videoContainer">
+    <video id="video" controls>
+    <source id="videoSource" src="" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
+</div>
+<script>
+    function mostrarVideo() {
+        var seleccion = document.getElementById("seleccionar").value;
+        var videoSource = document.getElementById("videoSource");
+        var video = document.getElementById("video");
+
+        if (seleccion !== "") {
+            videoSource.src = seleccion;
+            video.load();
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+</script>
+
+</html>
